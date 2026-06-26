@@ -1,0 +1,62 @@
+.main{
+   margin-top: 30vw;
+   position: relative;
+   z-index: 3;
+   color: lightgrey;
+   background-color: black;
+   border-radius: 100px;
+   width: 100%;
+   height: fit-content;
+   text-align: center;
+   font-family: "Heading";
+   overflow: hidden;
+   &__name{
+      margin-top: 40px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: clamp(40px,8vw,100px);
+      font-weight: 400;
+      letter-spacing: 10%;
+   }
+
+   &__job{
+      margin-top: clamp(10px,6vw,20px);
+      font-size: clamp(20px,4vw,50px);
+      font-weight: 100;
+      letter-spacing: 10%;
+   }
+
+   &__h-line{
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1px;
+      height: 68px;
+      background-color: white;
+   }
+
+   &__title{
+      margin-top: 40px;
+      font-size: 2vw;
+      font-weight: 300;
+      letter-spacing: 10%;
+   }
+
+   &__about-text{
+      color: lightgrey;
+      font-weight: 100;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 40px;
+      letter-spacing: 10%;
+   }
+
+   @media (max-width: 768px) {
+         margin-top: 50vw;
+         
+   }
+}

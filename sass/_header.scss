@@ -1,0 +1,33 @@
+.header{
+   position: relative;
+   background-color: white;
+   height: 100px;
+   
+   &__programmer-img{
+      display: block;
+      
+      
+      
+      z-index: 0;   
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -2%;
+      @media (max-width: 768px) {
+         width: 80vw;  
+         
+      }
+         
+   }
+   
+
+
+   &__contact-btn{
+      position:fixed;
+      z-index: 1;
+      top:20px;
+      right: 20px;
+      
+   }
+}
+

@@ -1,0 +1,51 @@
+.home{
+   background-color: rgb(124, 123, 123);
+   font-family: "Heading";
+   padding-top: 5vh;
+   color:white;
+   width: 100vw;
+   height: 100vh;
+   text-align: center;
+   overflow: hidden;
+   overscroll-behavior: contain;
+   
+   padding-bottom: 20px;
+   &__name{
+      
+      font-size: 10vw;
+      font-weight: 200;
+      letter-spacing: 10%;
+   }
+
+   &__job{
+      font-size: 8vw;
+      font-weight: 100;
+      letter-spacing: 10%;
+   }
+
+   &__title{
+      width: 70%;
+      margin-top: clamp(10px,10vw,80px);
+      font-size: 100px;
+      line-height: 80px;
+      font-weight: 500;
+      display: inline-block;
+      transform: scaleX(1.5); 
+      word-wrap: break-word;
+   }
+
+   &__about-btn{
+      margin-top: 5vh;
+      border-radius: 100px;
+      background-color: #FF833E;
+      height: 10%;
+      width: 30vw;
+      cursor: pointer;
+   }
+
+   &__btn-arrow{
+      width: 60%;
+      height: 70%;
+      
+   }
+}

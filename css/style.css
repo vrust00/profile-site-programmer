@@ -1,0 +1,208 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Heading";
+  src: url("../fonts/Heading-Pro-Bold-trial.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heading";
+  src: url("../fonts/Heading-Pro-ExtraBold-trial.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heading";
+  src: url("../fonts/Heading-Pro-Heavy-trial.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heading";
+  src: url("../fonts/Heading-Pro-Light-trial.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heading";
+  src: url("../fonts/Heading-Pro-Thin-trial.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+.home {
+  background-color: rgb(124, 123, 123);
+  font-family: "Heading";
+  padding-top: 5vh;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  overscroll-behavior: contain;
+  padding-bottom: 20px;
+}
+.home__name {
+  font-size: 10vw;
+  font-weight: 200;
+  letter-spacing: 10%;
+}
+.home__job {
+  font-size: 8vw;
+  font-weight: 100;
+  letter-spacing: 10%;
+}
+.home__title {
+  width: 70%;
+  margin-top: clamp(10px, 10vw, 80px);
+  font-size: 100px;
+  line-height: 80px;
+  font-weight: 500;
+  display: inline-block;
+  transform: scaleX(1.5);
+  word-wrap: break-word;
+}
+.home__about-btn {
+  margin-top: 5vh;
+  border-radius: 100px;
+  background-color: #FF833E;
+  height: 10%;
+  width: 30vw;
+  cursor: pointer;
+}
+.home__btn-arrow {
+  width: 60%;
+  height: 70%;
+}
+
+.header {
+  position: relative;
+  background-color: white;
+  height: 100px;
+}
+.header__programmer-img {
+  display: block;
+  z-index: 0;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2%;
+}
+@media (max-width: 768px) {
+  .header__programmer-img {
+    width: 80vw;
+  }
+}
+.header__contact-btn {
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  right: 20px;
+}
+
+.main {
+  margin-top: 30vw;
+  position: relative;
+  z-index: 3;
+  color: lightgrey;
+  background-color: black;
+  border-radius: 100px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  font-family: "Heading";
+  overflow: hidden;
+}
+.main__name {
+  margin-top: 40px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(40px, 8vw, 100px);
+  font-weight: 400;
+  letter-spacing: 10%;
+}
+.main__job {
+  margin-top: clamp(10px, 6vw, 20px);
+  font-size: clamp(20px, 4vw, 50px);
+  font-weight: 100;
+  letter-spacing: 10%;
+}
+.main__h-line {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1px;
+  height: 68px;
+  background-color: white;
+}
+.main__title {
+  margin-top: 40px;
+  font-size: 2vw;
+  font-weight: 300;
+  letter-spacing: 10%;
+}
+.main__about-text {
+  color: lightgrey;
+  font-weight: 100;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 40px;
+  letter-spacing: 10%;
+}
+@media (max-width: 768px) {
+  .main {
+    margin-top: 50vw;
+  }
+}/*# sourceMappingURL=style.css.map */
