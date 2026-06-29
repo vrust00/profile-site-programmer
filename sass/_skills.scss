@@ -2,7 +2,36 @@
    z-index: 1;
    background-color: #252525;
    color:white;
+   font-family: "Heading";
+   padding-bottom: 40px;
+   &__container{
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      justify-content:center;
+      margin-right: 20px;
+      margin-left: 20px;
+      gap:10vw;
 
+   }
+
+   &__card{
+      width: 20%;
+
+   }
+
+
+   &__title{
+      font-weight: 300;
+      font-size: 3vw;
+      min-height: 100px;
+   }
+
+   &__description{
+      letter-spacing: 10%;
+      font-weight: 100;
+      color: lightgrey;
+   }
    &__h-line{
       
       margin-bottom: 40px;
@@ -12,6 +41,10 @@
       height: 34px;
       background-color: white;
       
+   }
+
+   &__img{
+      height: 30px;
    }
 }
 

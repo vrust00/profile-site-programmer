@@ -329,6 +329,30 @@ body {
   z-index: 1;
   background-color: #252525;
   color: white;
+  font-family: "Heading";
+  padding-bottom: 40px;
+}
+.skills__container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  gap: 10vw;
+}
+.skills__card {
+  width: 20%;
+}
+.skills__title {
+  font-weight: 300;
+  font-size: 3vw;
+  min-height: 100px;
+}
+.skills__description {
+  letter-spacing: 10%;
+  font-weight: 100;
+  color: lightgrey;
 }
 .skills__h-line {
   margin-bottom: 40px;
@@ -337,6 +361,9 @@ body {
   width: 1px;
   height: 34px;
   background-color: white;
+}
+.skills__img {
+  height: 30px;
 }
 
 .unslide {
