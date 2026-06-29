@@ -344,6 +344,12 @@ body {
 .skills__card {
   width: 20%;
 }
+.skills__card:nth-child(2) {
+  text-align: center;
+}
+.skills__card:last-child {
+  text-align: right;
+}
 .skills__title {
   font-weight: 300;
   font-size: 3vw;
@@ -363,7 +369,8 @@ body {
   background-color: white;
 }
 .skills__img {
-  height: 30px;
+  margin-bottom: 10px;
+  width: 50%;
 }
 
 .unslide {
