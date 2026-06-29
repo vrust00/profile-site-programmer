@@ -1,5 +1,5 @@
 const btn = document.querySelector('.home__home-btn');
-const homebg = document.querySelector('.home-bg');
+const homebg = document.querySelectorAll('.home-bg, .home');
 const blocks = document.querySelectorAll('.header, .main, .skills');
 
 btn.addEventListener('click', () => {
@@ -9,12 +9,14 @@ btn.addEventListener('click', () => {
    document.body.style.height = 'auto';
    document.body.style.width = 'auto';
 
+   homebg.forEach(el => el.classList.add('slide'));
    
-   homebg.classList.add('slide');
-   blocks.forEach(block => block.classList.add('unslide'));
+   blocks.forEach(el => el.classList.add('unslide'));
 
    
-   homebg.addEventListener('transitionend', () => {
-      homebg.style.display = 'none';
-   }, );
+   homebg.forEach(el => {
+      el.addEventListener('transitionend', () => {
+         el.style.display = 'none';
+      }, { once: true });
+   });
 });

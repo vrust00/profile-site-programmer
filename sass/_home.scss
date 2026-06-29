@@ -6,7 +6,7 @@ body{
 }
 .home{
    position: fixed;
-   background-color: rgb(124, 123, 123);
+   background-color: rgba(0, 0, 0, 0.3);
    font-family: "Heading";
    padding-top: 5vh;
    color:white;
@@ -22,6 +22,7 @@ body{
    flex-direction: column;
 
    &__name{
+      
       color:white;
       font-size: 10vw;
       font-weight: 200;
