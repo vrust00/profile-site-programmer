@@ -4,7 +4,8 @@
    z-index: -1;
    color: lightgrey;
    background-color: black;
-   border-radius: 100px;
+   border-top-left-radius: 100px;
+   border-top-right-radius: 100px;
    width: 100%;
    height: fit-content;
    text-align: center;
@@ -31,13 +32,20 @@
    }
 
    &__h-line{
+      
       margin-top: 40px;
       margin-bottom: 40px;
       margin-left: auto;
       margin-right: auto;
       width: 1px;
+      
+
       height: 68px;
       background-color: white;
+      &:last-child{
+         margin-bottom: 0;
+         height: 45px;
+      }
    }
 
    &__title{

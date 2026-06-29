@@ -1,0 +1,22 @@
+.skills{
+   z-index: 1;
+   background-color: #252525;
+   color:white;
+
+   &__h-line{
+      
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1px;
+      height: 34px;
+      background-color: white;
+      
+   }
+}
+
+.unslide{
+   transform: translateX(0);
+   opacity: 1;
+   transition: 1s;
+}

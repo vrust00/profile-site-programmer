@@ -258,7 +258,8 @@ body {
   z-index: -1;
   color: lightgrey;
   background-color: black;
-  border-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
@@ -292,6 +293,10 @@ body {
   height: 68px;
   background-color: white;
 }
+.main__h-line:last-child {
+  margin-bottom: 0;
+  height: 45px;
+}
 .main__title {
   margin-top: 40px;
   font-size: 2vw;
@@ -312,6 +317,26 @@ body {
   .main {
     margin-top: 50vw;
   }
+}
+
+.unslide {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 1s;
+}
+
+.skills {
+  z-index: 1;
+  background-color: #252525;
+  color: white;
+}
+.skills__h-line {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1px;
+  height: 34px;
+  background-color: white;
 }
 
 .unslide {
