@@ -1,5 +1,6 @@
 .skills{
-   z-index: 2;
+   margin-top: 30vw;
+   z-index: 0;
    background-color: #252525;
    color:white;
    font-family: "Heading";
@@ -76,6 +77,11 @@
       margin-bottom: 10px;
       width: 50%;
       
+   }
+
+
+   @media (max-width: 799px) {
+      margin-top:50vw;
    }
 }
 

@@ -1,6 +1,6 @@
 const btn = document.querySelector('.home__home-btn');
 const homebg = document.querySelectorAll('.home-bg, .home');
-const blocks = document.querySelectorAll('.header, .main, .skills');
+const blocks = document.querySelectorAll('.header, .header__contact-btn, .main, .skills');
 
 btn.addEventListener('click', () => {
    

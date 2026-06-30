@@ -79,6 +79,7 @@ table {
 }
 * {
   pointer-events: none;
+  overscroll-behavior-y: none !important;
 }
 
 .home__home-btn,
@@ -113,6 +114,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  overscroll-behavior-y: none !important;
 }
 
 .home {
@@ -126,7 +128,7 @@ body {
   text-align: center;
   overflow: hidden;
   overscroll-behavior: contain;
-  z-index: 10;
+  z-index: 3;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -177,15 +179,14 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
   background-color: white;
   height: 100px;
-  z-index: -1;
+  z-index: 0;
   transform: translateX(100vw);
 }
 .header__programmer-img {
-  position: fixed;
-  left: 25%;
+  margin-left: 25%;
   width: 50%;
   z-index: 1;
   margin-top: -2%;
@@ -194,10 +195,11 @@ body {
 @media (max-width: 768px) {
   .header__programmer-img {
     width: 80vw;
-    left: 9%;
+    margin-left: 11%;
   }
 }
 .header__contact-btn {
+  transform: translateX(100vw);
   position: fixed;
   z-index: 1;
   top: 20px;
@@ -207,6 +209,7 @@ body {
   border: none;
   padding: 0;
   pointer-events: auto !important;
+  opacity: 0;
 }
 .header__contact-btn-img {
   pointer-events: none;
@@ -214,7 +217,7 @@ body {
 }
 
 .menu {
-  z-index: 10;
+  z-index: 2;
   position: fixed;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.95);
@@ -271,9 +274,9 @@ body {
 }
 
 .main {
-  margin-top: 30vw;
+  top: 30vw;
   position: relative;
-  z-index: -1;
+  z-index: 0;
   color: lightgrey;
   background-color: black;
   border-top-left-radius: 100px;
@@ -321,6 +324,11 @@ body {
   font-weight: 300;
   letter-spacing: 10%;
 }
+@media (max-width: 768px) {
+  .main__title {
+    font-size: 5vw;
+  }
+}
 .main__about-text {
   color: lightgrey;
   font-weight: 100;
@@ -333,7 +341,7 @@ body {
 }
 @media (max-width: 768px) {
   .main {
-    margin-top: 50vw;
+    top: 50vw;
   }
 }
 
@@ -344,7 +352,8 @@ body {
 }
 
 .skills {
-  z-index: 2;
+  margin-top: 30vw;
+  z-index: 0;
   background-color: #252525;
   color: white;
   font-family: "Heading";
@@ -422,6 +431,11 @@ body {
 .skills__img {
   margin-bottom: 10px;
   width: 50%;
+}
+@media (max-width: 799px) {
+  .skills {
+    margin-top: 50vw;
+  }
 }
 
 .unslide {

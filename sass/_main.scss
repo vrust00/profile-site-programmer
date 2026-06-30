@@ -1,7 +1,7 @@
 .main{
-   margin-top: 30vw;
+   top: 30vw;
    position: relative;
-   z-index: -1;
+   z-index: 0;
    color: lightgrey;
    background-color: black;
    border-top-left-radius: 100px;
@@ -53,6 +53,11 @@
       font-size: 2vw;
       font-weight: 300;
       letter-spacing: 10%;
+
+      @media (max-width: 768px) {
+         font-size: 5vw;
+         
+      }
    }
 
    &__about-text{
@@ -67,7 +72,7 @@
    }
 
    @media (max-width: 768px) {
-         margin-top: 50vw;
+         top: 50vw;
          
    }
 }
